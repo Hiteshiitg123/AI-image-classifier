@@ -10,7 +10,7 @@ To install the necessary dependencies, follow these steps:
 2. Navigate to the project directory.
 3. Install all the dependencies listed in the `Requirements.txt` file:
 
-<pre> pip install -r Requirements.txt </pre>
+<pre> pip install -r requirements.txt </pre>
 
 
 ## Usage
