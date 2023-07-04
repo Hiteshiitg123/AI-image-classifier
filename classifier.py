@@ -45,7 +45,7 @@ else:
     st.success("Image uploaded successfully")
     image = Image.open(file)
     image = image.convert("RGB")
-    st.image(image, use_column_width=True)
+    
     try:
         prediction = check(image, model)
         
@@ -67,3 +67,5 @@ else:
     
     except Exception as e:
         st.error("An error occurred during prediction")
+        
+    st.image(image, use_column_width=True)
