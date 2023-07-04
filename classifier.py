@@ -49,15 +49,15 @@ else:
     try:
         prediction = check(image, model)
         
-        if prediction <=0.35:
+        if prediction <=0.25:
             prediction = '{:.4f}'.format(prediction)
             st.markdown(f'<font color="#3F875F" size="5">This image is most likely an </font> <font color="#6E9E26" size="5">**AI generated** </font><font color="#3F875F" size="5">image with probability </font> <font color="#6E9E26" size="5"> **{prediction}**</font>', unsafe_allow_html=True)
         
-        elif prediction >0.35 and prediction <= 0.55:
+        elif prediction >0.25 and prediction <= 0.45:
             prediction = '{:.4f}'.format(prediction)
             st.markdown(f'<font color="#22568A" size="5">This image seems to be an </font> <font color="#58C3D2" size="5">**AI generated** </font> <font color="#22568A" size="5">image with probability </font> <font color="#58C3D2" size="5"> **{prediction}**</font>', unsafe_allow_html=True)
         
-        elif prediction >0.55 and prediction <= 0.75:
+        elif prediction >0.45 and prediction <= 0.70:
             prediction = '{:.4f}'.format(prediction)
             st.markdown(f'<font color="#923B6F" size="5">This image seems to be a </font> <font color="#D01D62" size="5">**Real** </font> <font color="#923B6F" size="5">image with probability </font> <font color="#D01D62" size="5"> **{prediction}**</font>', unsafe_allow_html=True)
         
