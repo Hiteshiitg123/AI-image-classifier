@@ -8,7 +8,7 @@ To install the necessary dependencies, follow these steps:
 
 1. Clone this repository in your machine.
 2. Navigate to the project directory.
-3. Install all the dependencies listed in the `Requirements.txt` file:
+3. Install all the dependencies listed in the `requirements.txt` file:
 
 <pre> pip install -r requirements.txt </pre>
 
